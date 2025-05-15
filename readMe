@@ -1,6 +1,25 @@
 MAANG Coding Question
 
 1). given an array, find max product
-```python
-xxx
-```
+
+def f(l):
+    preMax = l[0]
+    preMin = l[0]
+    maxProduct = max(preMax, preMin)
+    
+    i = 1
+    size = len(l)
+    
+    while i < size:
+        currMax = max(l[i], preMin*l[i], l[i]*preMax)
+        currMin = min(l[i], preMin*l[i], l[i]*preMax)
+        maxProduct = max(maxProduct, currMax, currMin)
+        
+        preMax = currMax
+        preMin = currMin
+        
+        i += 1
+    
+    return maxProduct
+
+2).
