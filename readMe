@@ -22,4 +22,14 @@ def f(l):
     
     return maxProduct
 
-2).
+2). find the kth largest element
+
+import heapq
+
+def f(l, k):
+    nums = [-int(v) for v in l]
+    heapq.heapify(nums)
+    while k > 1:
+        heapq.heappop(nums)
+        k -= 1
+
