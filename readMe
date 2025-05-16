@@ -33,3 +33,5 @@ def f(l, k):
         heapq.heappop(nums)
         k -= 1
 
+ref: https://www.youtube.com/watch?v=lRCaNiqO3xI
+
