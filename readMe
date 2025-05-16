@@ -1,6 +1,7 @@
 MAANG Coding Question
 
 1). given an array, find max product
+ref: https://www.youtube.com/watch?v=tiglejZngzU
 
 def f(l):
     preMax = l[0]
